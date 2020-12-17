@@ -16,7 +16,7 @@ import com.example.IBase.IBaseView;
  */
 public abstract class BaseMvpActivity<V extends IBaseView,P extends BasePresenter<V,M>,M extends IBaseModel> extends AppCompatActivity implements IBaseView {
 
-    private P mPresenter;
+    protected P mPresenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
