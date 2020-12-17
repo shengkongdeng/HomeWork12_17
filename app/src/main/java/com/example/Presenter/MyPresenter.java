@@ -13,7 +13,7 @@ import com.example.Model.MyModel;
 public class MyPresenter extends BasePresenter<Contracts.ConfigView, MyModel> implements Contracts.ConfigPresenter {
     @Override
     public void getData() {
-        getModel().requestData();
+        getModel().requestData(this);
     }
 
     @Override

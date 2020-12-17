@@ -1,5 +1,6 @@
 package com.example.Contract;
 
+import com.example.IBase.IBasePresenter;
 import com.example.IBase.IBaseView;
 
 /**
@@ -19,6 +20,6 @@ public interface Contracts {
     }
 
     interface ConfigModel{
-        void requestData();
+        void requestData(IBasePresenter p);
     }
 }
